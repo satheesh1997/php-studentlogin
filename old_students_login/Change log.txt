@@ -1,0 +1,7 @@
+
+-> Added new table academics to database.
+-> Background for login page added.
+-> Register button appears only if the student has his details in  the details table.
+-> Academics tab and page added (academics.html).
+-> Decorations added to the navigation bar.
+-> javascript files are not yet minified.
