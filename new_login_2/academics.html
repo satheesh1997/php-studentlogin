@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Marks</title>
+	<!-- Local bootstrap CSS -->
+	<link rel="stylesheet" media="screen" href="./css/bootstrap.css">
+	<link rel="stylesheet" media="screen" href="./css/font-awesome.css">
+	<link rel="stylesheet" media="screen" href="./css/materialize.css">
+	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Stylesheet -->	
+	<link rel="stylesheet" media="screen" href="./css/style.css">
+	<meta name="theme-color" content="white">
+</head>
+<body>
+	<div class="preloader">
+		<i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-top z-depth-3" role="navigation">
+		<div class="container-fluid nav-cont">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span=>
+				</button>
+				<img src="http://via.placeholder.com/40x40" class="img-circle" id="p_img"/>
+				<a class="navbar-brand red-text" href="#" id="p_name">Satheesh Kumar</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="./profile.html" class="text-danger">Profile</a></li>
+					<li><a href="./academics.html">Academics</a></li>
+					<li><a href="./applications.html">Applications</a></li>
+					<li><a href="./logout.html">Logout</a></li>
+					<li class="visible-lg visible-md"><a></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container-fluid">
+	    <div class="row" style="margin-top: 150px;">
+			<div class="col-md-6">
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER I</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem1">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER II</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem2">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER III</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem3">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER IV</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem4">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER V</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem5">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER VI</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem6">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER VII</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem7">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-primary" style="margin-bottom: 50px;">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>SEMESTER VIII</b></h3>
+						<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+					</div>
+					<div class="panel-body" style="padding: 0px;margin: 0;">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>SUBJECT</th>
+									<th>MARKS</th>
+									<th>GRADE</th>
+									<th>REMARKS</th>
+								</tr>
+							</thead>
+							<tbody id="sem8">
+								<tr>
+                                    <td class="text-danger text-center"><b>SEMESTER NOT COMPLETED</b></td>
+                                    <td class="text-danger text-center"><b> -------------------</b></td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery & Bootstrap Js -->
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/materialize.min.js"></script>
+	<script src="./js/cookies.js"></script>
+	<script src="./js/lico.js"></script>
+	<script src="./js/auth.js"></script>
+	<script src="./js/marks.js"></script>
+</body>
+</html>

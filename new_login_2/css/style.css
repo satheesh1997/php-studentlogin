@@ -1,0 +1,257 @@
+@font-face{
+    font-family:Jose;
+    src:url(../fonts/JosefinSans-SemiBold.ttf);
+}
+
+*{
+	transition: 1s all ease-out;
+}
+
+body{
+	font-family: sans-serif;
+	background:black;
+	background:url(../img/8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	transition: 1s all ease;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+.preloader{
+	position: absolute;
+	transition: 1s all ease;
+	background:#efeef6;
+	background:url(../img/pre.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	z-index:9999;
+	text-align: center;
+	height: 100vh;
+}
+.preloader > i{
+	position: relative;
+	top:37vh;
+	color: white;
+}
+.welcome{
+	padding: 20px;
+}
+
+.brand-logo{
+	width:100px;
+}
+
+h1.brand_name{
+	font-weight: bold;
+	color: orange;
+}
+
+h1 > small{
+	font-size: 17px;
+	font-family: Jose;
+	font-weight: bold;
+	color: yellow;
+}
+
+.login{
+	font-family: sans-serif;
+	margin-top:3%;
+}
+
+h3.heading{
+	text-align: center;
+	font-weight: bold;
+}
+
+.input-group{
+	margin-top: 15px;
+}
+.input-group > .img-circle{
+	margin-top: 5px;
+	transition: .1s all ease-in;
+	margin-bottom: 15px;
+	display: none;
+}
+
+.input-group-addon{
+	transition: 0s all ease;
+}
+
+.buttons > button{
+	margin-left: 20px;
+}
+
+#login_img{
+	width: 80px;
+	height: 80px;
+}
+
+#forget_img{
+	width: 80px;
+	height: 80px;
+}
+
+#register_img{
+	width: 80px;
+	height: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+    h1.brand_name{
+    	margin-top: 5%;
+    	font-size: 23px;
+    	margin-bottom: 5%;
+    	font-weight: bold;
+    }
+    .brand-logo{
+		width:40px;
+		display: none;
+	}
+	.login{
+		margin-top: 0px;
+	}
+}
+
+td.reg_pass{
+	margin: 0px;
+	padding: 0px !important;
+}
+td.reg_pass > .input-group{
+	margin: 2px;
+}
+
+#register_details{
+	transition: 1s all ease;
+	display: none;
+}
+
+.rules_btn{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+	background-color: orange;
+	color: black;
+}
+
+#p_img{
+	margin-top:10px;
+	left:20px;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px 0px;
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+.main{
+	margin-top: 120px;
+}
+
+.img-panel{
+	margin:0px;
+	padding:0px;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.img-panel-body{
+	padding:0px;
+	background: transparent;
+	border-color: transparent;
+	font-family: jose;
+}
+
+.img-panel-footer{
+	padding:0px;
+	font-family: jose;
+	font-size: 17px;
+	padding: 10px;
+}
+
+.social_links{
+	padding: 10px;
+}
+
+.social_links > .fa-facebook{
+	width:25px;
+	height: 25px;
+	padding-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.social_links > .fa-twitter{
+	width:25px;
+	height: 25px;
+	padding-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.social_links > .fa-linkedin{
+	width:25px;
+	height: 25px;
+	padding-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+#pro_img{
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: red;
+    font-family: jose;
+    font-size: 17px;
+}
+
+#p_name{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.nav-cont{
+	padding-top: 10px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: red;
+}
+
+.clickable{
+	margin-top: -15px;
+}

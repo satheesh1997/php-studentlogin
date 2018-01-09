@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Profile</title>
+	<!-- Local bootstrap CSS -->
+	<link rel="stylesheet" media="screen" href="./css/bootstrap.css">
+	<link rel="stylesheet" media="screen" href="./css/font-awesome.css">
+	<link rel="stylesheet" media="screen" href="./css/materialize.css">
+	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Stylesheet -->	
+	<link rel="stylesheet" media="screen" href="./css/style.css">
+	<meta name="theme-color" content="white">
+</head>
+<body>
+	<div class="preloader">
+		<i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-top z-depth-3" role="navigation">
+		<div class="container-fluid nav-cont">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span=>
+				</button>
+				<img src="http://via.placeholder.com/40x40" class="img-circle" id="p_img"/>
+				<a class="navbar-brand red-text" href="#" id="p_name">Satheesh Kumar</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="./profile.html" class="text-danger">Profile</a></li>
+					<li><a href="./academics.html">Academics</a></li>
+					<li><a href="./applications.html">Applications</a></li>
+					<li><a href="./logout.html">Logout</a></li>
+					<li class="visible-lg visible-md"><a></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="col-lg-3 col-sm-3 col-md-3">
+				<div class="panel panel-default img-panel">
+					<div class="panel-body img-panel-body">
+						<img src="http://via.placeholder.com/300x300" class="img-responsive" id="pro_img"/>
+					</div>
+					<div class="panel-footer img-panel-footer z-depth-3">
+						<p class="text-center social_links"><i class="fa fa-facebook hoverable blue white-text"></i><i class="fa fa-twitter hoverable blue white-text"></i><i class="fa fa-linkedin blue white-text hoverable"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-sm-9 col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="input-field col l6">
+				          <input id="pro_name" type="text" class="validate" value=" ">
+				          <label for="pro_name" class="active">Student Name</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_email" type="text" class="validate" value=" ">
+				          <label for="pro_email" class="active">Email Address</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_date" type="date" class="datepicker" value=" ">
+				          <label for="pro_date" class="active">Date Of Birth</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_course" type="text" class="validate" value=" ">
+				          <label for="pro_course" class="active">Course</label>
+				        </div>
+				        <div class="input-field col l6">
+				        	<label for="pro_gender" class="active">Gender</label>
+			          		<input class="with-gap"  name="pro_gender" type="radio" id="pro_male"/>
+							<label for="pro_male">Male</label>
+							<input class="with-gap"  name="pro_gender" type="radio" id="pro_fe_male"/>
+							<label for="pro_fe_male">Female</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_blood" type="text" class="validate" value=" ">
+				          <label for="pro_blood" class="active">Blood Group</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_ph_num" type="text" class="validate" value=" ">
+				          <label for="pro_ph_num" class="active">Phone Number</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <input id="pro_ph_f_num" type="text" class="validate" value=" ">
+				          <label for="pro_ph_f_num" class="active">Parent Number</label>
+				        </div>
+				        <div class="input-field col l6">
+				          <textarea id="pro_address" class="materialize-textarea" value=" "> &nbsp;</textarea>
+				          <label for="pro_address">Address</label>
+				        </div>
+				        <div class="input-field col l6">
+				        	<label for="pro_mode" class="active">Quota</label>
+			          		<input class="with-gap"  name="pro_mode" type="radio" id="pro_mq"/>
+							<label for="pro_mq">Management</label>
+							<input class="with-gap"  name="pro_mode" type="radio" id="pro_gq"/>
+							<label for="pro_gq">Government</label>
+				        </div>
+				        <div class="input-field col l12">
+				        	<p class="text-warning"> Student has no permissions to edit the details here. Kindly, contact your tutor to edit your details</p>
+				        	<p class="text-right"><button type="button" class="btn btn-success disabled">Update</button></p>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery & Bootstrap Js -->
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/materialize.min.js"></script>
+	<script src="./js/cookies.js"></script>
+	<script src="./js/lico.js"></script>
+	<script src="./js/auth.js"></script>
+	<script src="./js/profile.js"></script>
+</body>
+</html>
